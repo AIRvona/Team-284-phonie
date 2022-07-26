@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Phonie</title>
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+  <h2>WELCOME TO THE PHONIE FORM!</h2>
+
+  <form action="" method="post" class="form">
+
+
+    <div class="form_container">
+      <div class="name_field">
+        <label for="Name" class="name">Full Name</label><br>
+        <input type="text" name="Name" id="full_name" placeholder="E.g Adewale Tabitha Uke Rising" required />
+      </div><br>
+
+
+
+      <div class="number_field">
+        <label for="phone_number" class="form__group-label">
+          Phone Number</label><br>
+        <input type="tel" name="phone_number" id="phone_number" class="phone_number" placeholder="Enter Phone Number"
+          pattern="[0-9]{3}" required />
+      </div><br>
+
+      <div style="display: block">
+        <p id="text"></p> <img id="logo" style="width: 50px;height:50px" />
+      </div>
+      <input id="btn" type="submit" value="Submit" />
+
+    </div>
+
+  </form>
+
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
+<div class="number_field"></div>

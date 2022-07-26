@@ -67,3 +67,14 @@ When the user opens your dashboard app, they see HTML tables showing the followi
 
 * Make the tables sortable by (at least) the column holding the numbers. Indicate what columns are sortable (e.g with an icon or by adding the <> charectars in the column header e.t.c). When the user clicks on a sortable column header, sort the records in the table by that column (e.g switch the current sort order such that if the column was already sorted ASC, sort in DESC)
 
+
+## Link to Nigeria Telecom digit
+* https://en.wikipedia.org/wiki/Telephone_numbers_in_Nigeria
+### This is Mtn
+#### 0703, 0706, 0803, 0806, 0810, 0813, 0814, 0816, 0903, 0906, 0913, 0916.
+### This is Airtel
+#### 0701, 0708, 0802, 0808, 0812, 0901, 0902, 0904, 0907, 0912
+### Glo
+#### 0705, 0805, 0807, 0811, 0815, 0905,0915 
+### 9Mobile
+#### 0809, 0817, 0818, 0909, 0908
