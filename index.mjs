@@ -1,7 +1,25 @@
 const logo = document.getElementById("logo");
 const text = document.getElementById("text");
+const text2 = document.getElementById("text2");
 const input = document.getElementById("phone_number");
 const button = document.getElementById("btn");
+
+const mtn = [
+    "0803", "0806", "0814", "0810", "0813", "0814", "0703", "0706", "0816", "0903", "0906", "0913", "0916"
+  ]
+
+ const glo = [
+    "0805", "0705", "0811", "0807", "0915", "0815", "0905"
+  ]
+
+  const airtel = [
+    "0701", "0708", "0802", "0808", "0812", "0902", "0907", "0901", "0904"
+  ]
+
+  const ninemobile = [
+    "0809", "0817", "0818", "0908", "0909"
+  ]
+
 
 input.addEventListener("input", (e) => {
   var value = e.target.value;
@@ -28,22 +46,8 @@ input.addEventListener("input", (e) => {
 
 
 
-  const mtn = [
-    "0803", "0806", "0814", "0810", "0813", "0814", "0703", "0706", "0816", "0903", "0906", "0913", "0916"
-  ]
-
-  const glo = [
-    "0805", "0705", "0811", "0807", "0915", "0815", "0905"
-  ]
-
-  const airtel = [
-    "0701", "0708", "0802", "0808", "0812", "0902", "0907", "0901", "0904"
-  ]
-
-  const ninemobile = [
-    "0809", "0817", "0818", "0908", "0909"
-  ]
-
+  
+ 
 
 
   if (mtn.includes(value.slice(0, 4))) {
@@ -71,13 +75,29 @@ input.addEventListener("input", (e) => {
   }
 });
 
-button.addEventListener("click", function () {
-    if (mtn.includes(value.slice(0, 4))) {
-     return true;
-  } else {
-      text.innerHTML = "restricted to only mtn users"
-  }
-  })
+
+button.addEventListener("click", () => {
+    checkArray(input.value)
+})
+
+ function checkArray(value)  
+{  
+    text2.innerHTML = " "
+  
+  for(var i=0; i < mtn.length; i++)  
+{  
+    
+    var name = mtn[i];  
+    if(name ==  value.slice(0,4)){  
+        text2.innerHTML = "registration complete" 
+      break;  
+    } else {
+        text2.innerHTML = "Restricted to mtn users only"
+    }  
+  } 
+}
+
+
 
 
 
