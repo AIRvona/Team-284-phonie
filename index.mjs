@@ -89,7 +89,7 @@ button.addEventListener("click", () => {
     
     var name = mtn[i];  
     if(name ==  value.slice(0,4)){  
-        text2.innerHTML = "registration complete" 
+        window.location.href="https://www.altschoolafrica.com/schools/engineering" 
       break;  
     } else {
         text2.innerHTML = "Restricted to mtn users only"
